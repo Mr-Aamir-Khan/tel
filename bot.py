@@ -1,3 +1,5 @@
+import os
+
 from telegram import Update
 
 from telegram.ext import (
@@ -183,7 +185,19 @@ def main():
 
     print("✅ Bot is running...")
 
-    application.run_polling()
+    
+
+    port = int(os.environ.get("PORT", 10000))
+
+    application.run_webhook(
+    listen="0.0.0.0",
+    port=port,
+    url_path=BOT_TOKEN,
+    
+    webhook_url=f"https://my-telegram-bot.onrender.com/{BOT_TOKEN}",
+
+)
+
 
 
 if __name__ == "__main__":

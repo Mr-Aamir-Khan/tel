@@ -19,4 +19,4 @@ SUPPORT_USERNAME = os.getenv(
 )
 
 if not BOT_TOKEN:
-    raise ValueError("BOT_TOKEN missing in .env")
+    raise ValueError("BOT_TOKEN missing")
