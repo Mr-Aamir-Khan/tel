@@ -7,7 +7,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 CHANNEL_ID = int(os.getenv("CHANNEL_ID", "0"))
 
-PRICE_STARS = int(os.getenv("PRICE_STARS", "500"))
+PRICE_STARS = int(os.getenv("PRICE_STARS", "250"))
 
 MEMBERSHIP_DAYS = int(
     os.getenv("MEMBERSHIP_DAYS", "30")
